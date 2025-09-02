@@ -38,16 +38,21 @@ const HomePage: React.FC = () => {
             </div>
 
             <div className='flex flex-row mt-20'>
-            <div className='h-200 w-140 bg-white rounded-2xl'>
-                <p className='text-4xl font-extrabold text-gray-800 ml-5 mt-3'>Dashboard</p>
-                <p className='text-2xl font-extrabold text-gray-800 ml-5 mt-3'>Criados Hoje:</p>
-                <p className='text-2xl font-extrabold text-gray-800 ml-5 mt-3'>Total de Usuarios:</p>
-            </div>
+                <div className='h-200 w-140 bg-white rounded-2xl'>
+                    <p className='text-4xl font-bold text-gray-800 ml-5 mt-3 underline'>Dashboard</p>
+                    <div className='flex flex-row mt-30'>
+                        <p className='text-2xl font-bold text-gray-800 ml-9 mt-3'>Criados Hoje:</p>
+                        <p className='text-2xl font-bold text-gray-800 ml-25 mt-3'>Total de Usuarios:</p>
+                    </div>
+                </div>
 
-                <div className='ml-50 text-4xl font-extrabold text-gray-800'>
-                <p>Ultimos Curriculos Criados</p>
-
-            </div>
+                <div className='ml-20 text-4xl font-bold text-gray-800'>
+                    <p>Ultimos Curriculos Criados</p>
+                    <div className='h-30 w-160 bg-white rounded-2xl mt-6'></div>
+                    <div className='h-30 w-160 bg-white rounded-2xl mt-6'></div>
+                    <div className='h-30 w-160 bg-white rounded-2xl mt-6'></div>
+                    <div className='h-30 w-160 bg-white rounded-2xl mt-6'></div>
+                </div>
 
             </div>
 
