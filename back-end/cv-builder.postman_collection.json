@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "9915f672-69f3-4490-899e-88e8fd5ee92d",
+		"name": "cv-builder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32373349"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeCompleto\": \"João Silva\",\r\n  \"email\": \"joao@email.com\",\r\n  \"telefone\": \"(11) 99999-8888\",\r\n  \"endereco\": {\r\n    \"cep\": \"01001-000\",\r\n    \"rua\": \"Praça da Sé\",\r\n    \"numero\": \"100\",\r\n    \"bairro\": \"Sé\",\r\n    \"cidade\": \"São Paulo\",\r\n    \"estado\": \"SP\"\r\n  },\r\n  \"resumoProfissional\": \"Desenvolvedor com 5 anos de experiência...\",\r\n  \"experienciaProfissional\": [\r\n    {\r\n      \"cargo\": \"Desenvolvedor Frontend\",\r\n      \"empresa\": \"Empresa X\",\r\n      \"dataInicio\": \"2020-01-01\",\r\n      \"dataFim\": \"2023-06-30\",\r\n      \"descricao\": \"Desenvolvimento de interfaces...\"\r\n    }\r\n  ],\r\n  \"formacaoAcademica\": [\r\n    {\r\n      \"curso\": \"Engenharia da Computação\",\r\n      \"instituicao\": \"USP\",\r\n      \"anoConclusao\": 2019\r\n    }\r\n  ],\r\n  \"idiomas\": [\r\n    {\r\n      \"idioma\": \"Inglês\",\r\n      \"nivel\": \"Avançado\"\r\n    },\r\n    {\r\n      \"idioma\": \"Espanhol\",\r\n      \"nivel\": \"Intermediário\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/curriculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"curriculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/curriculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"curriculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/curriculos/1756907699286",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"curriculos",
+						"1756907699286"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeCompleto\": \"João Silva Souza\",\r\n    \"email\": \"joao@email.com\",\r\n    \"telefone\": \"(11) 99999-8888\",\r\n    \"endereco\": {\r\n        \"cep\": \"01001-000\",\r\n        \"rua\": \"Praça da Sé\",\r\n        \"numero\": \"100\",\r\n        \"bairro\": \"Sé\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"estado\": \"SP\"\r\n    },\r\n    \"resumoProfissional\": \"Desenvolvedor com 5 anos de experiência...\",\r\n    \"experienciaProfissional\": [\r\n        {\r\n            \"cargo\": \"Desenvolvedor Frontend\",\r\n            \"empresa\": \"Empresa X\",\r\n            \"dataInicio\": \"2020-01-01\",\r\n            \"dataFim\": \"2023-06-30\",\r\n            \"descricao\": \"Desenvolvimento de interfaces...\"\r\n        }\r\n    ],\r\n    \"formacaoAcademica\": [\r\n        {\r\n            \"curso\": \"Engenharia da Computação\",\r\n            \"instituicao\": \"USP\",\r\n            \"anoConclusao\": 2019\r\n        }\r\n    ],\r\n    \"idiomas\": [\r\n        {\r\n            \"idioma\": \"Inglês\",\r\n            \"nivel\": \"Avançado\"\r\n        },\r\n        {\r\n            \"idioma\": \"Espanhol\",\r\n            \"nivel\": \"Intermediário\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/curriculos/1756907699286",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"curriculos",
+						"1756907699286"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
