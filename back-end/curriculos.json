@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "1757023932859",
+    "criadoEm": "2025-09-04T22:12:12.859Z",
+    "nomeCompleto": "João Silva",
+    "email": "joao@email.com",
+    "telefone": "(11) 99999-8888",
+    "endereco": {
+      "cep": "01001-000",
+      "rua": "Praça da Sé",
+      "numero": "100",
+      "bairro": "Sé",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "resumoProfissional": "Desenvolvedor com 5 anos de experiência...",
+    "experienciaProfissional": [
+      {
+        "cargo": "Desenvolvedor Frontend",
+        "empresa": "Empresa X",
+        "dataInicio": "2020-01-01",
+        "dataFim": "2023-06-30",
+        "descricao": "Desenvolvimento de interfaces..."
+      }
+    ],
+    "formacaoAcademica": [
+      {
+        "curso": "Engenharia da Computação",
+        "instituicao": "USP",
+        "anoConclusao": 2019
+      }
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Intermediário"
+      }
+    ]
+  }
+]

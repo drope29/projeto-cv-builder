@@ -5,6 +5,9 @@ const port = 8000;
 
 app.use(express.json());
 
+const cors = require('cors');
+app.use(cors());
+
 const CURRICULOS_FILE = './curriculos.json';
 
 const readCurriculos = () => {
@@ -29,6 +32,19 @@ app.get('/curriculos', (req, res) => {
         res.json(curriculos);
     } catch (err) {
         res.status(500).json({ error: 'Erro ao ler currículos' });
+    }
+});
+
+app.get('/curriculos/recentes', (req, res) => {
+    try {
+        const curriculos = readCurriculos();
+        const recentes = curriculos
+            .sort((a, b) => new Date(b.criadoEm) - new Date(a.criadoEm))
+            .slice(0, 5);
+
+        res.json(recentes);
+    } catch (err) {
+        res.status(500).json({ error: 'Erro ao buscar currículos recentes' });
     }
 });
 
@@ -120,19 +136,6 @@ app.delete('/curriculos/:id', (req, res) => {
         res.json({ message: 'Currículo removido com sucesso', curriculo: curriculoRemovido[0] });
     } catch (err) {
         res.status(500).json({ error: 'Erro ao remover currículo' });
-    }
-});
-
-app.get('/curriculos/recentes', (req, res) => {
-    try {
-        const curriculos = readCurriculos();
-        const recentes = curriculos
-            .sort((a, b) => new Date(b.criadoEm) - new Date(a.criadoEm))
-            .slice(0, 5);
-
-        res.json(recentes);
-    } catch (err) {
-        res.status(500).json({ error: 'Erro ao buscar currículos recentes' });
     }
 });
 
