@@ -2,7 +2,7 @@
 
 📝 Descrição do Projeto
 
-O **CV Builder** é um projeto acadêmico desenvolvido como parte dos requisitos da [Nome da Disciplina/Curso] no [Nome da Instituição de Ensino]. A aplicação web permite que os usuários criem, preencham e gerenciem seus próprios currículos de forma dinâmica e intuitiva.
+O **CV Builder** é um projeto acadêmico. A aplicação web permite que os usuários criem, preencham e gerenciem seus próprios currículos de forma dinâmica e intuitiva.
 
 O objetivo principal do projeto foi aplicar conceitos modernos de desenvolvimento front-end, utilizando tecnologias como React e Tailwind CSS para criar uma interface de usuário responsiva, interativa e visualmente agradável.
 
